@@ -6,7 +6,7 @@ import time
 import itertools
 
 #baca dataset dari file
-datasetPath = "dataset\klasering_dataset.txt"
+datasetPath = "D:\PythonCode\VS_code\Data-Mining-and-Big-Data-Analytics-Book\dataset\klasering_dataset.txt"
 dataset = np.loadtxt(datasetPath, delimiter=" ")
 
 #mendefinisikan parameter k-means klustering

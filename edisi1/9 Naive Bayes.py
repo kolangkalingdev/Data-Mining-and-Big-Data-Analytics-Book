@@ -4,10 +4,13 @@ import pandas as pd
 from sklearn.naive_bayes import GaussianNB
 
 #membaca dataset dari file ke pandas dataFrame
-irisDataset = pd.read_csv('dataset/klasifikasi_dataset_iris.csv', delimiter=',', header=0)
+irisDataset = pd.read_csv('D:\PythonCode\VS_code\Data-Mining-and-Big-Data-Analytics-Book\dataset\klasifikasi_dataset_iris.csv', delimiter=',', header=0)
 #mengubah kelas (kolom "Species") dari string ke unique-integer
+
 irisDataset["Species"] = pd.factorize(irisDataset.Species)[0]
 #menghapus kolom "Id"
+
+print(irisDataset["Species"] )
 irisDataset = irisDataset.drop(labels="Id", axis=1)
 
 #mengubah dataframe ke array numpy
